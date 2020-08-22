@@ -17,6 +17,17 @@ export class QuoteDetailsComponent implements OnInit {
     this.isComplete.emit(complete);
   }
 
+  // adding upvotes and downvotes
+  upVotes: number = 0;
+  downVotes: number = 0;
+
+  likeButtonClick() {
+    this.upVotes++;
+  }
+
+  dislikeButtonClick() {
+    this.downVotes++;
+  }
 
 
 

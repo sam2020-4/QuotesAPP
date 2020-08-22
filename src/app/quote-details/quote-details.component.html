@@ -2,9 +2,12 @@
 
 <p>{{quote.description}}</p>
   <!-- <p> Author:{{quote.author}}</p>
-  <p> Submitted by:{{quote.submittedby}}</p>
-  <p> (Posted {{quote.completeDate|dateCount}} days ago)</p> -->
+  <p> Submitted by:{{quote.submittedby}}</p> -->
+  <!-- <p> (Posted {{quote.completeDate|dateCount}} days ago)</p>  -->
   
-
+<div>
+  <a (click)="likeButtonClick()" ><i class="fa fa-thumbs-up fa-lg like"></i></a> {{upVotes}} &nbsp;
+  <a (click)="dislikeButtonClick()"><i class="fa fa-thumbs-down fa-lg dislike"></i></a>{{downVotes}}
+</div>
 
 <button (click)='quoteDelete(true)' style="margin-left: 50%">Delete Quote</button>
