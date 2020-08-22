@@ -39,3 +39,8 @@ p{
   .dislike{
       color: aqua;
   }
+
+  span{
+      color: rgb(40, 3, 248);
+      font-weight: 700;
+  }

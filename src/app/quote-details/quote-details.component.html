@@ -1,9 +1,10 @@
 <!-- <p>quote-details works!</p> -->
 
 <p>{{quote.description}}</p>
-  <!-- <p> Author:{{quote.author}}</p>
-  <p> Submitted by:{{quote.submittedby}}</p> -->
-  <!-- <p> (Posted {{quote.completeDate|dateCount}} days ago)</p>  -->
+<p> Author:&nbsp;{{quote.author}}</p>
+<p> Submitted by:&nbsp; {{quote.submittedby}}</p>
+<p> <span>Quote Posted:</span> &nbsp;{{quote.completeDate|dateCount}} days ago</p> 
+  
   
 <div>
   <a (click)="likeButtonClick()" ><i class="fa fa-thumbs-up fa-lg like"></i></a> {{upVotes}} &nbsp;
