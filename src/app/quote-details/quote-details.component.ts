@@ -28,12 +28,8 @@ export class QuoteDetailsComponent implements OnInit {
   dislikeButtonClick() {
     this.downVotes++;
   }
-
-
-
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }
