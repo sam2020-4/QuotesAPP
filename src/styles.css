@@ -19,6 +19,14 @@ h1{
     font-size: 1.6rem;
 }
 
+ul{
+    list-style-type: none;
+    color: rgb(185, 17, 67);
+}
+p{
+    color: black;
+}
+
 .card {
     margin-bottom: 2%;
     background-color: burlywood;
@@ -26,7 +34,7 @@ h1{
 
   .like{
       color:rgb(187, 114, 114);
-      
+
   }
   .dislike{
       color: aqua;
