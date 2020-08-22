@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Quote } from '../quote'
-import { from } from 'rxjs';
+import { Quote } from '../quote';
+
 
 @Component({
   selector: 'app-quotes',

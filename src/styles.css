@@ -1,6 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 
+
 h1{
     color:blue ;
+    margin-top: 2px;
 }
+.Qheading{
+    padding-left: 100px;
+    color: black;
+    font-size: 1.6rem;
+}
+
+.card {
+    margin-bottom: 2%;
+    background-color: burlywood;
+  }
