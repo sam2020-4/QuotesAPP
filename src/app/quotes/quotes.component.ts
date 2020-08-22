@@ -15,6 +15,22 @@ export class QuotesComponent implements OnInit {
     new Quote(2, 'Social Quote', 'Those who realize their folly are not true fools', 'Victor Manuel','Tony wein', new Date(2015, 4, 11))
   ];
 
+  // click event binding
+  toggleDetails(index){
+      this.quotes[index].showDescription = !this.quotes[index].showDescription;
+    }
+
+    // make the event active
+  deleteQuote(isComplete, index) {
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}?`)
+      if (toDelete) {
+        this.quotes.splice(index, 1)
+      }
+    }
+  }
+
+  
   
 
 
