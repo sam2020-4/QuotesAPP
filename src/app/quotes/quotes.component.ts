@@ -28,12 +28,7 @@ export class QuotesComponent implements OnInit {
         this.quotes.splice(index, 1)
       }
     }
-  }
-
-  
-  
-
-
+  }  
 
   constructor() { }
 
