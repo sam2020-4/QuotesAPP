@@ -44,3 +44,9 @@ p{
       color: rgb(40, 3, 248);
       font-weight: 700;
   }
+
+  /* footer */
+  footer{
+      background-color: rgb(10, 10, 10);
+      color: white;
+  }
