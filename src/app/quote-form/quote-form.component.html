@@ -1,6 +1,33 @@
 <!-- adding form component and validating it -->
-<div class="container-fluid formform">
+<div class="container formform">
     <h2 class="text-center">Create your own Quote here!!</h2>
     <hr>
+    <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+        <div class="form-group">    
+          <label for="name">Quote</label>
+          <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="ngModel">    
+        </div>
 
+        <div class="form-group">    
+          <label for="description">Description</label>
+          <textarea class="form-control" id="description" rows="3" [(ngModel)]="newQuote.description" name="ngModel" required></textarea>
+        </div>
+
+        <div class="form-group">    
+          <label for="author">Author</label>
+          <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author" name="ngModel">
+        </div>
+
+        <div class="form-group">    
+          <label for="submittedby">Submitted by:</label>
+          <input type="text" required class="form-control" id="Submittedby" [(ngModel)]="newQuote.submittedby" name="ngModel">
+        </div>
+
+        <div class="form-group">
+          <label for="complete">Date</label>
+          <input type='date' class="form-control" id="completeDate" required [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate='ngModel' >
+        </div>
+
+        <button type="submit" class="btn btn-primary">Add Quote</button>
+    </form>
 </div>

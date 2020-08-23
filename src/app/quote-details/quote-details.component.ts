@@ -18,8 +18,8 @@ export class QuoteDetailsComponent implements OnInit {
   }
 
   // adding upvotes and downvotes
-  upVotes: number = 5;
-  downVotes: number = 3;
+  upVotes: number = 0;
+  downVotes: number = 0;
 
   likeButtonClick() {
     this.upVotes++;
