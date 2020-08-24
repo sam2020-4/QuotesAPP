@@ -2,10 +2,10 @@
 <div class="container formform">
     <h3 class="text-center">Create your own Quote here!!</h3>
     <hr>
-    <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+    <form (ngSubmit)='submitQuote()' #quoteForm='ngForm' role="form" name="form" novalidate>
       <div class="form-group">
         <label for="name">Quote</label>
-        <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required>
+        <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.name" placeholder="Enter Quote here" name="name" #name='ngModel' required>
         
         <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
           <p>Quote is required</p>
@@ -14,7 +14,7 @@
 
         <div class="form-group">    
           <label for="description">Description</label>
-          <textarea class="form-control" id="description" rows="3" [(ngModel)]="newQuote.description" name="description" #description="ngModel" required></textarea>
+          <textarea class="form-control" id="description" rows="3" [(ngModel)]="newQuote.description" placeholder="Enter description" name="description" #description="ngModel" required></textarea>
           <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
             <p>description is required</p>
           </div>
@@ -22,7 +22,7 @@
 
         <div class="form-group">    
           <label for="author">Author</label>
-          <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author="ngModel">
+          <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author" placeholder="Enter Author" name="author" #author="ngModel">
           <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
             <p>author is required</p>
           </div>
@@ -30,7 +30,7 @@
 
         <div class="form-group">    
           <label for="submittedby">Submitted by:</label>
-          <input type="text" required class="form-control" id="Submittedby" [(ngModel)]="newQuote.submittedby" name="submittedby" #submittedby="ngModel">
+          <input type="text" required class="form-control" id="Submittedby" [(ngModel)]="newQuote.submittedby" placeholder="Enter who Submitted the Quote" name="submittedby" #submittedby="ngModel">
           <div [hidden]="submittedby.valid || submittedby.pristine" class="alert alert-danger">
             <p>submittedby is required</p>
           </div>
@@ -43,7 +43,6 @@
             <p>Date is required</p>
           </div>
         </div>
-
-        <button type="submit" class="btn btn-primary">Add Quote</button>
+        <button type="submit" class="btn btn-primary"  ng-disabled="form.$invalid">Add Quote</button>
     </form>
 </div>
