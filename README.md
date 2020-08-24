@@ -2,6 +2,28 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.
 
+## Description
+
+This is an application that enables users to create quotes and have those quotes voted on whether they are terrible or are inspirational.It also has its own existing Quotes that a user can refer to.A user can also delete a quote. A link to my live page:
+
+## Author
+
+Matata Samuel
+
+## Behaviour Driven Development BDD
+
+### Functions of the Web application
+
+1.The app should be able to allow the user to read through the Quotes that are provided by the app.As a sample . 2.It has also provided a form to help users Input the Quotes of there desires. 3.The app allows the user to input the date to which they posted the app and view how long it was. 4.The user can upvote and downvote.
+
+## Setup/Installation requirements
+
+1.Clone or download and unzip the repository from github,https://github.com/sam2020-4/QuotesAPP. 2.You can use this command (git clone my link) to clone the project to your machine if you have git . 3.Run ng serve -o from your terminal to compile and open the web app.
+
+## Technologies used
+
+*Angular CLI
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
