@@ -18,9 +18,7 @@ export class QuoteFormComponent implements OnInit {
   }
 
   // validating data input
-  
-
-
+    // wanted to validate all my controls but researching on it.
 
   constructor() { }
 
