@@ -7,7 +7,7 @@
         <p class="Qheading">Quotes</p>   
             <div *ngFor='let quote of quotes;let i =index' class="card"><br> 
                 <ul> 
-                    <li appStrikethrough>{{quote.name}}</li> <br>                   
+                    <li appStrikethrough>{{quote.name}}  Generated on {{quote.completeDate|date|uppercase}} </li> <br>                   
                     <button class="btn btn-primary" style="color:wheat" (click)='toggleDetails(i)'>Show Details</button>
                     
                     <app-quote-details *ngIf='quote.showDescription' [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
